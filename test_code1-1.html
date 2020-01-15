@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>Document</title>
+     <style>
+          *{margin:0;padding:0;border:0;}
+          #wrap{
+               color:white;
+               font-size:29px;line-height:40px;
+               width:90%;
+               height:auto;
+               margin:0 auto;
+               background-color:#fe8020
+          }
+          #wrap > div{
+               display:inline-block;
+               width:31.25%;/*300 / 960px */
+               height:500px;
+               background-color:#000;
+          }
+          #wrap div:first-child{
+               margin-right:37.5%;/*360px여백값 */
+               background-color:#0020ef;
+          }
+          #wrap div:first-child + div{
+               background-color:#00a790;
+          }/*인라인 블록의 경우 요소의 크기 패딩 여백 다 설정 가능하며, 줄바꿈 시에 줄바꿈을 몇줄을 하던간에 줄바꿈시에 여백(공백)이 자동으로 생긴다 . 이여백은 어떠한 짓을 해도 사라지지 않는다.따라서 인라인요소에 대해서 사용시 이러한 공백을 제거하려면 띄어쓰기는 없어야한다*/
+     </style>
+</head>
+<body>
+     <div id='wrap'>
+          <div>1.zzzzzz</div><div>2.zzzzzz</div><div>3.zzzzzz</div><div>4.zzzzzz</div><div>5.zzzzzz</div><div>6.zzzzzz</div>
+
+     </div>
+</body>
+</html>
