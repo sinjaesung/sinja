@@ -5,6 +5,7 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <meta http-equiv="X-UA-Compatible" content="ie=edge">
      <title>Document</title>
+     <script src='http://code.jquery.com/jquery-1.10.2.js'></script>
      <style>
           *{margin:0;padding:0;border:0;}
           #wrap{
@@ -16,34 +17,39 @@
                background-color:#00efef;
                overflow:hidden;
           }
-          #wrap > div{
+          #wrap > .target{
                float:left;
                width:29%;/*300 / 960px */
                height:500px;
                background-color:#798;
-               margin:2%;
+               margin:2%;cursor:pointer;
           }
 
      </style>
 </head>
 <body>
      <div id='wrap'>
-          <div>1.zzzzzz</div>
-          <div>2.zzzzzz</div>
-          <div>3.zzzzzz</div>
-          <div>4.zzzzzz</div>
-          <div>5.zzzzzz</div>
-          <div>6.zzzzzz</div>
-          <div>7.zzzzzz</div>
-          <div>8.zzzzzz</div>
-          <div>9.zzzzzz</div>
+          <div class='target'>1.zzzzzz</div>
+          <div class='target'>2.zzzzzz</div>
+          <div class='target'>3.zzzzzz</div>
+          <div class='target'>4.zzzzzz</div>
+          <div class='target'>5.zzzzzz</div>
+          <div class='target'>6.zzzzzz</div>
+          <div class='target'>7.zzzzzz</div>
+          <div class='target'>8.zzzzzz</div>
+          <div class='target'>9.zzzzzz</div>
      </div>
      <script>
-     var wrap_el=document.getElementById('wrap');
-     wrap_el.addEventListener('click',click_handle,false);
+
+     $('.target').click(click_handle);
 
      function click_handle(event){
-          event.target.style.backgroundColor='#708060';
+          var r=Math.floor(256*Math.random());
+          var g=Math.floor(256*Math.random());
+          var b=Math.floor(256*Math.random());
+          var rgb='rgba('+r+','+g+','+b+',0.7)';
+
+          event.target.style.backgroundColor=rgb;
      }
      </script>
 </body>
