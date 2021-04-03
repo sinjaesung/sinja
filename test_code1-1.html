@@ -8,7 +8,7 @@
      <script src='http://code.jquery.com/jquery-1.10.2.js'></script>
      <style>
           *{margin:0;padding:0;border:0;}
-          body,html{background-color:rgba(0,0,0,0.8);}
+          body,html{ background-color:#405060;}
           #wrap{
                color:white;
                font-size:29px;line-height:40px;
@@ -20,9 +20,9 @@
           }
           #wrap > .target{
                float:left;
-               width:29%;/*300 / 960px */
+               width:39%;/*300 / 960px */
                height:500px;
-               background-color:#798;
+               background-color:#406008;
                margin:2%;cursor:pointer;
           }
 
@@ -35,45 +35,6 @@
           <div class='target'>3.호호호호호</div>
           <div class='target'>4.호호호호호</div>
      </div>
-     <script>
-
-     $('.target').click(click_handle);
-
-     function click_handle(event){
-          var r=Math.floor(256*Math.random());
-          var g=Math.floor(256*Math.random());
-          var b=Math.floor(256*Math.random());
-          var rgb='rgba('+r+','+g+','+b+',0.7)';
-
-          event.target.style.backgroundColor=rgb;
-     }
-
-    function click_handle2(event){
-          var r=Math.floor(256*Math.random());
-          var g=Math.floor(256*Math.random());
-          var b=Math.floor(256*Math.random());
-          var rgb='rgba('+r+','+g+','+b+',0.7)';
-
-          event.target.style.backgroundColor=rgb;
-     }
-
-     function click_handle3(event){
-          var r=Math.floor(256*Math.random());
-          var g=Math.floor(256*Math.random());
-          var b=Math.floor(256*Math.random());
-          var rgb='rgba('+r+','+g+','+b+',0.7)';
-
-          event.target.style.backgroundColor=rgb;
-     }
-
-     function click_handle4(event){
-          var r=Math.floor(256*Math.random());
-          var g=Math.floor(256*Math.random());
-          var b=Math.floor(256*Math.random());
-          var rgb='rgba('+r+','+g+','+b+',0.7)';
-
-          event.target.style.backgroundColor=rgb;
-     }
-     </script>
+    
 </body>
 </html>
