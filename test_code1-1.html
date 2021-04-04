@@ -62,5 +62,37 @@
           <div class='target'>9.호호호호호</div>
           <div class='target'>10.호호호호호</div>
      </div>
+
+     <script>
+
+     $('.target').click(click_handle);
+
+     function click_handle(event){
+          var r=Math.floor(256*Math.random());
+          var g=Math.floor(256*Math.random());
+          var b=Math.floor(256*Math.random());
+          var rgb='rgba('+r+','+g+','+b+',0.7)';
+
+          event.target.style.backgroundColor=rgb;
+     }
+       function click_handle2(event){
+          var r=Math.floor(256*Math.random());
+          var g=Math.floor(256*Math.random());
+          var b=Math.floor(256*Math.random());
+          var rgb='rgba('+r+','+g+','+b+',0.7)';
+
+          event.target.style.backgroundColor=rgb;
+     }
+       function click_handle(event){
+          var r=Math.floor(256*Math.random());
+          var g=Math.floor(256*Math.random());
+          var b=Math.floor(256*Math.random());
+          var rgb='rgba('+r+','+g+','+b+',0.7)';
+
+          event.target.style.backgroundColor=rgb;
+     }
+
+     </script>
+
 </body>
 </html>

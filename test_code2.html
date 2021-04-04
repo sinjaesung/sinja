@@ -7,6 +7,7 @@
   <meta name="Keywords" content="">
   <meta name="Description" content="">
   <title>Document</title>
+  <script src='http://code.jquery.com/jquery-1.10.2.js'></script>
   <style>
     #wrap{
 	  width:90%;
@@ -40,7 +41,37 @@
      <div>ㅎㅁㅁㅎㅁㅎㅁㅎㅁㅎㅁㅎ</div><div>ㅎㅎㅁㅎㅁㅎㅎㅁㅎ</div>
      <div>ㅎㅁㅁㅎㅁㅎㅁㅎㅁㅎㅁㅎ</div><div>ㅎㅎㅁㅎㅁㅎㅎㅁㅎ</div>
      <div>ㅎㅁㅁㅎㅁㅎㅁㅎㅁㅎㅁㅎ</div><div>ㅎㅎㅁㅎㅁㅎㅎㅁㅎ</div>
-    
+
+     <div class='target'>호호호호호</div><div class='target'>호호호호호</div>
+     <h2 class='target'>HOHOHOHO</h2>
    </div>
+
+   <script>
+    $('.target').click(click_handle);
+    function click_handle(event){
+        var r=Math.floor(256*Math.random());
+        var g=Math.floor(256*Math.random());
+        var b=Math.floor(256*Math.random());
+        var rgb='rgba('+r+','+g+','+b+',0.7)';
+
+        event.target.style.backgroundColor=rgb;
+     }
+     function click_handle2(event){
+        var r=Math.floor(256*Math.random());
+        var g=Math.floor(256*Math.random());
+        var b=Math.floor(256*Math.random());
+        var rgb='rgba('+r+','+g+','+b+',0.7)';
+
+        event.target.style.backgroundColor=rgb;
+     }
+     function click_handle(event){
+        var r=Math.floor(256*Math.random());
+        var g=Math.floor(256*Math.random());
+        var b=Math.floor(256*Math.random());
+        var rgb='rgba('+r+','+g+','+b+',0.7)';
+
+        event.target.style.backgroundColor=rgb;
+     }
+   </script>
  </body>
 </html>
