@@ -9,12 +9,38 @@
   <title>Document</title>
   <script src='http://code.jquery.com/jquery-1.10.2.js'></script>
   <style>
-   
+
+    html,body{background-color:#989898;}
+    #wrap{
+	  width:100%;
+	  height:auto;
+	  margin:0 auto;
+    display:flex; justify-content:space-around;flex-flow:row wrap;
+	}
+
+	#wrap div{
+	  display:inline-block;
+	  width:20%;
+	  height:200px;
+    background-color:#705060; margin-bottom:20px;
+	}
+
+  nav{
+    background-color:rgba(200,80,0,0.8);position:fixed;width:100%;height:auto;top:0;left:0;
+    height:120px; color:white;top:20%;
+  }
+	
   </style>
  </head>
  <body>
+  <nav>
+    <div class='inner'>내비게이션 하하하핳</div>
+  </nav>
    <div id='wrap'>
-     
+
+     <div>aaaaaaa</div><div>ddddddd</div>
+     <div>bbbbbbb</div><div>eeeeeeeee</div>
+     <div>ccccc</div><div>ffffffffff</div>    
    </div>
 
    <script>
