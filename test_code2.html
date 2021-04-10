@@ -39,37 +39,33 @@
    <div id='wrap'>
 
        <div class='target'>aaaaaaa</div><div class='target'>ddddddd</div>
-       <div class='target'>bbbbbbb</div><div class='target'>eeeeeeeee</div>
-       <div class='target'>ccccc</div><div class='target'>ffffffffff</div>    
+       <p>fffffff</p><p>zzzzzzzzzzzz</p><p>zzzzzzzzzzzz</p><p>zzzzzzzzzzzz</p>
+       <p>zzzzzzzzzzzz</p><p>zzzzzzzzzzzz</p><p>zzzzzzzzzzzz</p>
+       <div class='target'>ccccc</div><div class='target'>ffffffffff</div>  
+
    </div>
 
    <script>
-    $('.target').click(click_handle);
-    function click_handle(event){
-        var r=Math.floor(256*Math.random());
-        var g=Math.floor(256*Math.random());
-        var b=Math.floor(256*Math.random());
-        var rgb='rgba('+r+','+g+','+b+',0.7)';
+   $('.target').click(click_handle);
+     $('.target').click(click_handle2);
+     $('.target').click(click_handle3);
 
-        event.target.style.backgroundColor=rgb;
-     }
-     function click_handle2(event){
-        var r=Math.floor(256*Math.random());
-        var g=Math.floor(256*Math.random());
-        var b=Math.floor(256*Math.random());
-        var rgb='rgba('+r+','+g+','+b+',0.7)';
-
-        event.target.style.backgroundColor=rgb;
-     }
      function click_handle(event){
-        var r=Math.floor(256*Math.random());
-        var g=Math.floor(256*Math.random());
-        var b=Math.floor(256*Math.random());
-        var rgb='rgba('+r+','+g+','+b+',0.7)';
+          var r=Math.floor(256*Math.random());
+          var g=Math.floor(256*Math.random());
+          var b=Math.floor(256*Math.random());
+          var rgb='rgba('+r+','+g+','+b+',0.7)';
 
-        event.target.style.backgroundColor=rgb;
+          event.target.style.backgroundColor=rgb;
      }
-     function jobs(){
+       function click_handle2(event){
+         $('.target').fadeOut(400);
+     }
+       function click_handle3(event){
+          $('.target').fadeIn(400);
+     }
+
+      function jobs(){
 
      }
      function ajax(){
@@ -86,6 +82,15 @@
      }
      function opengl(){
       
+     }
+     function unreal(){
+
+     }
+     function blender(){
+
+     }
+     function threedsmax(){
+
      }
    </script>
  </body>
