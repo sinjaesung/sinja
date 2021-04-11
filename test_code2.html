@@ -29,7 +29,13 @@
     background-color:rgba(200,80,0,0.8);position:fixed;width:100%;height:auto;top:0;left:0;
     height:120px; color:white;top:20%;
   }
-	
+	 
+   .testcss{
+      width:80%;height:320px;background-color:#004090;
+   }
+   .target{
+    position:relative;
+   }
   </style>
  </head>
  <body>
@@ -44,15 +50,16 @@
 
        <div class='target'>eeefe</div><div class='target'>gsdgsdgsdg</div>
 
+       <div class='test testcss'>므므므므믐므므므</div><div class='test testcss'>므므므므믐므므므</div>
+
        <div class='target'>oopopoppp</div><div class='target'>ppppppp</div>
 
        <div class='target'>ssssssss</div><div class='target'>iiiiiiiiiii</div>
    </div>
 
    <script>
-   $('.target').click(click_handle);
+     $('.target').click(click_handle);
      $('.target').click(click_handle2);
-     $('.target').click(click_handle3);
 
      function click_handle(event){
           var r=Math.floor(256*Math.random());
@@ -63,12 +70,14 @@
           event.target.style.backgroundColor=rgb;
      }
        function click_handle2(event){
-         $('.target').fadeOut(400);
+         $('.target').animate({
+            left : '200px'
+         },{
+          queue:false,
+          duration:400
+         })
      }
-       function click_handle3(event){
-          $('.target').fadeIn(400);
-     }
-
+      
       function jobs(){
 
      }

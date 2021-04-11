@@ -38,6 +38,13 @@
 		height:120px; color:white;top:20%;
 	}
 	
+  .testcss{
+      width:80%;height:320px;background-color:#004090;
+   }
+   .target{
+    position:relative;
+   }
+   
   </style>
  </head>
  <body>
@@ -52,6 +59,7 @@
   	    <div class='target'>크크크크크크킄</div><div class='target'>크크크크크크크크크</div>
   	    <div class='target'>크크크크크크킄</div><div class='target'>크크크크크크크크크</div>
 	     </div>
+       <div class="testcss">ㄱ가가가가가</div><div class="testcss">ㄱ가가가가가</div>
        <p>무무무무뭄무</p><p>무무무무뭄무</p><p>무무무무뭄무</p><p>무무무무뭄무</p><p>무무무무뭄무</p>
        <div class='container'>
         <div class='target'>ananannananana</div><div class='target'>ananannananana</div>
@@ -64,7 +72,6 @@
    <script>	
  $('.target').click(click_handle);
      $('.target').click(click_handle2);
-     $('.target').click(click_handle3);
 
      function click_handle(event){
           var r=Math.floor(256*Math.random());
@@ -75,10 +82,12 @@
           event.target.style.backgroundColor=rgb;
      }
        function click_handle2(event){
-         $('.target').fadeOut(400);
-     }
-       function click_handle3(event){
-          $('.target').fadeIn(400);
+         $('.target').animate({
+            left : '200px'
+         },{
+          queue:false,
+          duration:400
+         })
      }
 
       function jobs(){

@@ -33,6 +33,14 @@
           #wrap > .jobs{
                background-color:#fe7020;
           }
+
+          .testcss{
+             width:80%;height:320px;background-color:#004090;
+          }
+          .target{
+             position:relative;
+          }
+       
      </style>
           
 </head>
@@ -50,6 +58,7 @@
           <div class='target'>6.그랴랴랴랴랴</div>
      </div>
      <p>흐흐흐흐흐흐흐 과연 어떻게 될것인가??하하하하</p>
+     <div class="testcss">ㄱ가가가가가</div><div class="testcss">ㄱ가가가가가</div>
      <p>흐하하하하하핳 일을 즐길수있을것인가? 일이 될수있음 재밌는게 좋겠지.</p>
      <div id='wrap'>
           <div class='target jobs'>잡스 잡스</div>
@@ -66,7 +75,6 @@
 
      $('.target').click(click_handle);
      $('.target').click(click_handle2);
-     $('.target').click(click_handle3);
 
      function click_handle(event){
           var r=Math.floor(256*Math.random());
@@ -76,11 +84,13 @@
 
           event.target.style.backgroundColor=rgb;
      }
-       function click_handle2(event){
-         $('.target').fadeOut(400);
-     }
-       function click_handle3(event){
-          $('.target').fadeIn(400);
+     function click_handle2(event){
+         $('.target').animate({
+            left : '200px'
+         },{
+          queue:false,
+          duration:400
+         })
      }
 
       function jobs(){
