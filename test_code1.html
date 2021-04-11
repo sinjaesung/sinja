@@ -9,65 +9,46 @@
   <title>Document</title>
   <script src='http://code.jquery.com/jquery-1.10.2.js'></script>
   <style>
-    #wrap{
-	  width:100%;
-	  height:auto;
-	  margin:0 auto;
-	}
+ 
 	.container{
-	  width:93.75%; /*900px / 960px */
-	  height:492px;
+	 
+	  height:auto;
 	  margin:0 auto;
 	}
     .container div{
 	  display:inline-block;
-	  height:100%;
-	  width:100%; /*900px / 960px */
-	  height:auto;
-	  margin:0 auto; display:flex;flex-flow:row wrap;
+	  width:40%; /*900px / 960px */
+	  margin:0 auto; height:320px;
+    border:1px solid red; position:relative;
 	}
-    .container div{
-	  display:inline-block;
-	  height:400px;width:33.333333333333333333333%;
-    background-color:#002090; color:white;
-	}
+   
 
 
 	nav{
-		background-color:rgba(0,0,0,0.8);position:fixed;width:100%;height:auto;top:0;left:0;
-		height:120px; color:white;top:20%;
+		background-color:rgba(0,0,0,0.8);position:fixed;width:100%;height:auto;top:208px;left:0;
+		height:120px; color:white;top:20%;  z-index:886;
 	}
 	
-  .testcss{
-      width:80%;height:320px;background-color:#004090;
-   }
-   .target{
-    position:relative;
-   }
+
 
   </style>
  </head>
  <body>
  	<nav>
  		<div class='inner'>내비게이션 하하하핳</div>
-    <p>크카하하하 테스트 테스트</p>
  	</nav>
-   <div id='wrap'>
       <div class='container'>
   	    <div class='target'>크크크크크크킄</div><div class='target'>크크크크크크크크크</div>
   	    <div class='target'>크크크크크크킄</div><div class='target'>크크크크크크크크크</div>
   	    <div class='target'>크크크크크크킄</div><div class='target'>크크크크크크크크크</div>
   	    <div class='target'>크크크크크크킄</div><div class='target'>크크크크크크크크크</div>
 	     </div>
-       <div class="testcss">ㄱ가가가가가</div><div class="testcss">ㄱ가가가가가</div>
-       <p>무무무무뭄무</p><p>무무무무뭄무</p><p>무무무무뭄무</p><p>무무무무뭄무</p><p>무무무무뭄무</p>
        <div class='container'>
         <div class='target'>ananannananana</div><div class='target'>ananannananana</div>
         <div class='target'>ananannananana</div><div class='target'>ananannananana</div>
         <div class='target'>ananannananana</div><div class='target'>ananannananana</div>
         <div class='target'>ananannananana</div><div class='target'>ananannananana</div>
        </div>
-   </div>
 
    <script>	
  $('.target').click(click_handle);
