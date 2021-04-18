@@ -9,78 +9,104 @@
   <title>Document</title>
   <script src='http://code.jquery.com/jquery-1.10.2.js'></script>
   <style>
-    #wrap{
-	  width:90%;
+   body{
+     background:linear-gradient(-90deg,#8020dd,#fe8040);
+   }
+	.container{
+	 
 	  height:auto;
 	  margin:0 auto;
 	}
-	.container{
-	  width:100%; /*900px / 960px */
-	  height:492px;
-	  margin:0 auto; display:flex;flex-flow:row wrap;
-	}
     .container div{
 	  display:inline-block;
-	  height:100%;
+	  width:40%; /*900px / 960px */
+	  margin:0 auto; height:320px;  color:white;
+     position:relative; background-color:rgba(80,20,200,0.5);
+	  
 	}
-	.container div{
-	   width:33.333333333333333333333%;
-	   /* 300px / 900px */
-	   background-color:#106070;
-	}
-
+   
 	nav{
-		background-color:rgba(0,0,0,0.8);position:fixed;width:100%;height:auto;top:0;left:0;
-		height:120px; color:white;top:20%;
+		background-color:rgba(0,0,0,0.8);position:fixed;width:100%;height:auto;top:208px;left:0;
+		height:120px; color:white;top:20%;  z-index:886;
 	}
 	
+
+
   </style>
  </head>
  <body>
  	<nav>
  		<div class='inner'>내비게이션 하하하핳</div>
  	</nav>
-   <div id='wrap'>
       <div class='container'>
-	    <div>크크크크크크킄</div><div>크크크크크크크크크</div>
-	    <div>크크크크크크킄</div><div>크크크크크크크크크</div>
-	    <div>크크크크크크킄</div><div>크크크크크크크크크</div>
-	    <div>크크크크크크킄</div><div>크크크크크크크크크</div>
-	    <div class='target'>호호호호호</div><div class='target'>호호호</div>
-
-	    <h2 class='target'>HOHO</h2>
-
-	  </div>
-   </div>
+  	    <div class='target'>크크크크크크킄</div><div class='target'>크크크크크크크크크</div>
+  	    <div class='target'>크크크크크크킄</div><div class='target'>크크크크크크크크크</div>
+  	    <div class='target'>크크크크크크킄</div><div class='target'>크크크크크크크크크</div>
+  	    <div class='target'>크크크크크크킄</div><div class='target'>크크크크크크크크크</div>
+	     </div>
+       <div class='container'>
+        <div class='target'>ananannananana</div><div class='target'>ananannananana</div>
+        <div class='target'>ananannananana</div><div class='target'>ananannananana</div>
+        <div class='target'>ananannananana</div><div class='target'>ananannananana</div>
+        <div class='target'>ananannananana</div><div class='target'>ananannananana</div>
+       </div>
 
    <script>	
  $('.target').click(click_handle);
+     $('.target').click(click_handle2);
 
      function click_handle(event){
           var r=Math.floor(256*Math.random());
           var g=Math.floor(256*Math.random());
           var b=Math.floor(256*Math.random());
-          var rgb='rgba('+r+','+g+','+b+',0.7)';
+          var rgb='rgba('+r+','+g+','+b+',0.9)';
 
           event.target.style.backgroundColor=rgb;
      }
        function click_handle2(event){
-          var r=Math.floor(256*Math.random());
-          var g=Math.floor(256*Math.random());
-          var b=Math.floor(256*Math.random());
-          var rgb='rgba('+r+','+g+','+b+',0.7)';
-
-          event.target.style.backgroundColor=rgb;
-     }
-       function click_handle(event){
-          var r=Math.floor(256*Math.random());
-          var g=Math.floor(256*Math.random());
-          var b=Math.floor(256*Math.random());
-          var rgb='rgba('+r+','+g+','+b+',0.7)';
-
-          event.target.style.backgroundColor=rgb;
+         $('.target').animate({
+            left : '500px'
+         },{
+          queue:false,
+          duration:600
+         })
      }
 
+     
+     function ajax(){
+          console.log('흐흐흫 홍길동 개발자 버전 jojbs roqk개발 함수 각 개발ㅈ바 개발부분이 겹치게 개발된경우느??');
+            console.log('ajaxajaj');document.body.style.backgroundColor='#479815';
+     }
+    
+     function webgl(){
+           console.log('흐흐흫 홍길동 개발자 버전 jojbs roqk개발 함수 각 개발ㅈ바 개발부분이 겹치게 개발된경우느??');
+           console.log('weglwlwlelwebgl webgl'); document.body.style.backgroundColor='#479815';
+     }    
+     function unity(){
+          console.log('흐흐흫 홍길동 개발자 버전 jojbs roqk개발 함수 각 개발ㅈ바 개발부분이 겹치게 개발된경우느??');
+            console.log('unitify unitinty unitiy'); document.body.style.backgroundColor='#479815';
+     }
+     function opengl(){
+         console.log('흐흐흫 홍길동 개발자 버전 jojbs roqk개발 함수 각 개발ㅈ바 개발부분이 겹치게 개발된경우느??');
+           console.log('openglglglg opengl'); document.body.style.backgroundColor='#479815';
+     }
+     function unreal(){
+          console.log('흐흐흫 홍길동 개발자 버전 jojbs roqk개발 함수 각 개발ㅈ바 개발부분이 겹치게 개발된경우느??');
+           console.log('unreal real real unreal '); document.body.style.backgroundColor='#479815';
+     }
+     function blender(){
+          console.log('흐흐흫 홍길동 개발자 버전 jojbs roqk개발 함수 각 개발ㅈ바 개발부분이 겹치게 개발된경우느??');
+          console.log('blender lblend blender');document.body.style.backgroundColor='#479815';
+     }
+     function threedsmax(){
+           console.log('흐흐흫 홍길동 개발자 버전 jojbs roqk개발 함수 각 개발ㅈ바 개발부분이 겹치게 개발된경우느??');
+          console.log('threedsmax mmsmamamx');document.body.style.backgroundColor='#479815';
+     }
+     function three3dgraphics(){
+          console.log('흐흐흫 홍길동 개발자 버전 jojbs roqk개발 함수 각 개발ㅈ바 개발부분이 겹치게 개발된경우느??');  
+          console.log('threegrapchis grpahics'); document.body.style.backgroundColor='#479815';      
+     }
+    
    </script>
  </body>
 </html>
